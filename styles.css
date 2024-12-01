@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Bebas Neue", sans-serif;
+    background: #2b2a30;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 518px;
+    height: 518px;
+}
+
+.ring {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    stroke: #09a65a;
+}
+
+.ring.change {
+    stroke: #910A0A;
+}
+
+.ring .progress-ring {
+    fill: none;
+    stroke-dasharray: 1594; 
+    stroke-dashoffset: 0; 
+    transition: stroke-dashoffset 1s linear;
+}
+
+.timer {
+    border-radius: 100%;
+    background: radial-gradient(71.42% 71.42% at 51.7% 28.6%, rgb(58, 57, 63) 0%, rgb(23, 23, 26) 100%);
+    box-shadow: inset 0 0 114px 0 rgba(0, 0, 0, 0.45);
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 23px;
+    position: relative;
+    z-index: 2;
+}
+
+.show-time {
+    display: flex;
+    align-items: center;
+}
+
+.show-time p {
+    font-weight: 400;
+    font-size: 196px;
+    background: linear-gradient(180deg, #fff 0%, #d5d8e1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+input[type="text"] {
+    border: 0;
+    border-bottom: 1px dotted white;
+    background: none;
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    height: 170px;
+    width: 150px;
+    font-size: 196px;
+    text-align: center;
+    outline: none;
+}
+
+input[type="text"]:disabled {
+    border-bottom: none;
+}
+
+.start {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.6em;
+    text-align: center;
+    color: white;
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.setting {
+    background: transparent;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}

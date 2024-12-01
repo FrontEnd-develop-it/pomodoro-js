@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>Pomodoro</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <section>
+        <div class="ring change">
+            <svg width="518" height="518" viewBox="0 0 518 518">
+                <circle class="progress-ring" stroke-width="9px" cx="259" cy="259" r="254" />
+            </svg>
+        </div>
+        <div class="timer">
+            <div class="show-time">
+                <input type="text" name="minutes" value="15" disabled id="minutes">
+                <p>:</p>
+                <input type="text" name="seconds" value="00" disabled id="seconds">
+            </div>
+            <button class="start">start</button>
+            <button class="setting">
+                <img src="./img/gear.svg" alt="">
+            </button>
+        </div>
+    </section>
+    
+    <script src="./app.js"></script>
+</body>
+</html>
